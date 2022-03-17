@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "poppins-r";
+  src: url("../font/poppins-regular.ttf");
+}
+
+@font-face {
+  font-family: "poppins-eb";
+  src: url("../font/poppins-extra-bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins-r";
+  font-size: 1em;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+h4,
+h6,
+p span {
+  font-family: "poppins-eb";
+}
+
+footer .container {
+  padding: 10px 15px;
+}
+
+footer .part-one .container {
+  padding-bottom: 15px;
+}
+
+footer .part-one {
+  background-color: #444;
+}
+
+footer .part-one .container {
+  width: 100%;
+  display: grid;
+  row-gap: 15px;
+}
+
+@media (min-width: 680px) {
+  footer .part-one .container {
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px 15px;
+  }
+
+  footer .part-one .contact-us {
+    grid-column: span 2;
+  }
+
+  footer .part-one .contact-us .details {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px 15px;
+  }
+
+  footer .part-one .newsletter {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 980px) {
+  footer .part-one .container {
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, auto);
+    gap: 15px 15px;
+  }
+
+  footer .part-one .contact-us {
+    grid-column: span 3;
+  }
+
+  footer .part-one .contact-us .details {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0 25px;
+  }
+
+  footer .part-one .information {
+    grid-column: span 2;
+  }
+
+  footer .part-one .my-account {
+    grid-column: span 3;
+  }
+
+  footer .part-one .newsletter {
+    grid-column: span 4;
+  }
+}
+
+footer .part-one h4 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+footer .part-one h6 {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #ddd;
+  letter-spacing: 1px;
+}
+
+footer .part-one p,
+ul li {
+  color: #aaa;
+  font-size: .9em;
+}
+
+@media (min-width: 980px) {
+  footer .part-one h4 {
+    font-size: 1em;
+  }
+
+  footer .part-one h6 {
+    font-size: .8em;
+  }
+
+  footer .part-one p,
+  ul li {
+    font-size: .75em !important;
+  }
+}
+
+
+ul li {
+  margin: 4px 0;
+}
+
+footer .part-one .contact-us .details {
+  margin-top: 5px;
+}
+
+footer .part-one .contact-us .details p {
+  margin: 5px 0;
+  font-size: .85em;
+  color: #fff;
+}
+
+footer .part-one form {
+  margin: 8px 0;
+  display: grid;
+  row-gap: 8px;
+}
+
+footer .part-one form input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+footer .part-one form input[type="email"] {
+  background-color: #666;
+}
+
+footer .part-one form input[type="email"]::placeholder {
+  color: #bbb;
+}
+
+footer .part-one form input[type="submit"] {
+  background-color: #E52727;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "poppins-eb";
+}
+
+@media (min-width: 680px) {
+  footer .part-one form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0 8px;
+  }
+}
+
+@media (min-width: 980px) {
+  footer .part-one form input {
+    font-size: .8em;
+    min-height: 30px;
+  }
+}
+
+footer .part-one .icons {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+footer .part-one .icons div {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: var(--color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+footer .part-two {
+  background-color: #333;
+}
+
+footer .part-two .powered-by {
+  font-size: .85em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer .part-two .credit-cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, auto);
+}
+footer .part-two .credit-cards img {
+  background-color: #fff;
+  border-radius: 3px;
+}
+footer .part-two .credit-cards img:nth-of-type(3) {
+  background-color: transparent;
+}
+@media (min-width: 680px) {
+  footer .part-two .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 980px) {
+  footer .part-two .container {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    gap: 0 25px;
+  }
+
+  footer .part-two .powered-by {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: .75em;
+  }
+
+  footer .part-two .credit-cards {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    grid-template-columns: repeat(5, auto);
+  }
+  footer .part-two .credit-cards img {
+    margin-left: 10px;
+  }
+}
